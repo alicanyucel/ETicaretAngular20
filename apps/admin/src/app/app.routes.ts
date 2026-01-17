@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
-import { LayoutsComponent } from '../page/layouts.component';
 import { HomeComponent } from '../page/home/home.component';
 import { LoginComponent } from '../page/login/login.component';
+import { LayoutsComponent } from '../page/layouts/layouts.component';
 
 
 export const appRoutes: Route[] = [
