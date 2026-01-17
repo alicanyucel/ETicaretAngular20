@@ -1,0 +1,55 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.4",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": "app/app.component.html",
+        "hash": "11987652264972370457"
+      },
+      {
+        "file": "app/app.component.ts",
+        "hash": "11050191950957672615"
+      },
+      {
+        "file": "app/app.config.ts",
+        "hash": "6137170128205633588"
+      },
+      {
+        "file": "app/app.routes.ts",
+        "hash": "6185150965714414910"
+      },
+      {
+        "file": "app/nx-welcome.component.ts",
+        "hash": "5595440417907424046"
+      },
+      {
+        "file": "index.html",
+        "hash": "7899792888691802531"
+      },
+      {
+        "file": "main.ts",
+        "hash": "16635586463787978962"
+      },
+      {
+        "file": "nx",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "styles.css",
+        "hash": "5195668842064076916"
+      },
+      {
+        "file": "test/test.component.ts",
+        "hash": "8297952342914498779"
+      },
+      {
+        "file": "test/test.html",
+        "hash": "8208049746714773064"
+      }
+    ]
+  }
+}
