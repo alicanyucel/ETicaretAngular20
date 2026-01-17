@@ -1,52 +1,156 @@
-# Myorg
+# E-Commerce Admin Dashboard
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+Nx monorepo ile oluşturulan **Admin Dashboard** uygulaması. Angular standalone components kullanarak modern ve modüler bir yapı sağlar.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+## 🚀 Teknolojiler
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- **Framework**: Angular 17+ (Standalone Components)
+- **Build Tool**: Nx Monorepo
+- **Package Manager**: npm
+- **Styling**: CSS3
+- **Routing**: Angular Router
 
-## Run tasks
+## 📁 Proje Yapısı
 
-To run the dev server for your app, use:
+```
+myorg/
+├── apps/
+│   └── admin/
+│       └── src/
+│           ├── app/
+│           │   ├── app.component.ts
+│           │   ├── app.routes.ts
+│           │   └── app.config.ts
+│           ├── page/
+│           │   ├── layouts/
+│           │   │   ├── layouts.component.ts
+│           │   │   ├── layouts.component.html
+│           │   │   └── layouts.component.css
+│           │   ├── home/
+│           │   │   ├── home.component.ts
+│           │   │   ├── home.component.html
+│           │   │   └── home.component.css
+│           │   ├── login/
+│           │   │   ├── login.component.ts
+│           │   │   ├── login.component.html
+│           │   │   └── login.component.css
+│           │   └── test/
+│           │       ├── test.component.ts
+│           │       ├── test.component.html
+│           │       └── test.component.css
+│           └── index.html
+└── package.json
+```
 
-```sh
+## 🛠️ Kurulum
+
+### Gereksinimler
+- Node.js 18+
+- npm 9+
+
+### Adımlar
+
+1. **Bağımlılıkları yükleyin:**
+```bash
+npm install
+```
+
+2. **Geliştirme sunucusunu başlatın:**
+```bash
 npx nx serve admin
 ```
 
-To create a production bundle:
+3. Tarayıcıda açın: [http://localhost:4200](http://localhost:4200)
 
-```sh
+## 📝 Komutlar
+
+### Geliştirme
+```bash
+# Dev sunucusunu başlat
+npx nx serve admin
+
+# Linting kontrol et
+npx nx lint admin
+
+# Testleri çalıştır
+npx nx test admin
+```
+
+### Production
+```bash
+# Production build yap
 npx nx build admin
+
+# Tüm projeleri graph olarak gör
+npx nx graph
 ```
 
-To see all available targets to run for a project, run:
-
-```sh
-npx nx show project admin
+### Component Oluşturma
+```bash
+# Yeni component oluştur
+nx g @nx/angular:component --name=mycomponent --path=apps/admin/src/page/mycomponent --standalone
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+## 🗺️ Routing Yapısı
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Uygulama aşağıdaki route yapısına sahiptir:
 
-## Add new projects
-
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
-
-Use the plugin's generator to create new projects.
-
-To generate a new application, use:
-
-```sh
-npx nx g @nx/angular:app demo
+```
+/ (Layouts)
+├── /home (Home Component)
+├── /login (Login Component)
+└── /test (Test Component)
 ```
 
-To generate a new library, use:
+**Layouts Component** ana layout olarak çalışır ve `Home` ve `Login` componentlerini içerir.
 
-```sh
-npx nx g @nx/angular:lib mylib
-```
+## 📦 Componentler
+
+### 1. **Layouts Component** (`page/layouts/`)
+Ana layout sayfası. Tüm sayfa öğelerinin düzenini yönetir.
+- Children: Home, Login components
+- Standalone: ✅
+
+### 2. **Home Component** (`page/home/`)
+Ana sayfa. Dashboard ve önemli bilgiler gösterilir.
+- Standalone: ✅
+
+### 3. **Login Component** (`page/login/`)
+Giriş sayfası. Kullanıcı kimlik doğrulaması sağlar.
+- Standalone: ✅
+
+### 4. **Test Component** (`page/test/`)
+Test amaçlı örnek component.
+- Standalone: ✅
+
+### 5. **App Component** (`app/`)
+Kök component. Routing'i yönetir.
+
+## 🎨 Stil Yönetimi
+
+Her component'in kendi CSS dosyası vardır:
+- `layouts.component.css` - Layout stilleri
+- `home.component.css` - Home sayfa stilleri
+- `login.component.css` - Login form stilleri
+- `app.component.css` - Global app stilleri
+
+## 📚 Kaynaklar
+
+- [Nx Dokumentasyonu](https://nx.dev)
+- [Angular Dokumentasyonu](https://angular.io)
+- [Angular Standalone Components](https://angular.io/guide/standalone-components)
+- [Angular Router](https://angular.io/guide/router)
+
+## 📄 Lisans
+
+Bu proje açık kaynak olarak sunulmaktadır.
+
+---
+
+**Geliştirici İpuçları:**
+- Nx CLI ile component oluşturmak için `nx g @nx/angular:component` kullanın
+- Yeni route eklemek için `app.routes.ts` dosyasını düzenleyin
+- Component'ler standalone olduğu için ayrı module'a gerek yoktur
 
 You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
 
