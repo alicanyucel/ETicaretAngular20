@@ -4,7 +4,7 @@ Nx monorepo ile oluşturulan **Admin Dashboard** uygulaması. Angular standalone
 
 ## 🚀 Teknolojiler
 
-- **Framework**: Angular 17+ (Standalone Components)
+- **Framework**: Angular 20 (Standalone Components)
 - **Build Tool**: Nx Monorepo
 - **Package Manager**: npm
 - **Styling**: CSS3
