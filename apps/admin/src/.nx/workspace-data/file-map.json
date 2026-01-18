@@ -16,7 +16,7 @@
       },
       {
         "file": "app/app.config.ts",
-        "hash": "3355541345721872596"
+        "hash": "9908244905097233187"
       },
       {
         "file": "app/app.routes.ts",
@@ -28,7 +28,7 @@
       },
       {
         "file": "index.html",
-        "hash": "2823546001702121897"
+        "hash": "550259593163026883"
       },
       {
         "file": "main.ts",
@@ -37,6 +37,18 @@
       {
         "file": "nx",
         "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/categories/categories.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/categories/categories.component.html",
+        "hash": "12231699227194766551"
+      },
+      {
+        "file": "page/categories/categories.component.ts",
+        "hash": "7981925011486892159"
       },
       {
         "file": "page/home/home.component.css",
@@ -56,7 +68,7 @@
       },
       {
         "file": "page/layouts/layouts.component.html",
-        "hash": "10541660920782310136"
+        "hash": "11086556919948760895"
       },
       {
         "file": "page/layouts/layouts.component.ts",
@@ -73,6 +85,30 @@
       {
         "file": "page/login/login.component.ts",
         "hash": "17797223239508354514"
+      },
+      {
+        "file": "page/products/products.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/products/products.component.html",
+        "hash": "12231699227194766551"
+      },
+      {
+        "file": "page/products/products.component.ts",
+        "hash": "14943574087580635440"
+      },
+      {
+        "file": "page/users/users.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/users/users.component.html",
+        "hash": "12231699227194766551"
+      },
+      {
+        "file": "page/users/users.component.ts",
+        "hash": "2954762616189501023"
       },
       {
         "file": "styles.css",
