@@ -1,6 +1,6 @@
 {
   "version": "6.0",
-  "nxVersion": "20.8.4",
+  "nxVersion": "21.0.0",
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
@@ -12,15 +12,15 @@
       },
       {
         "file": "app/app.component.ts",
-        "hash": "11050191950957672615"
+        "hash": "14129189191271102126"
       },
       {
         "file": "app/app.config.ts",
-        "hash": "6137170128205633588"
+        "hash": "3355541345721872596"
       },
       {
         "file": "app/app.routes.ts",
-        "hash": "6185150965714414910"
+        "hash": "4207792162443342674"
       },
       {
         "file": "app/nx-welcome.component.ts",
@@ -28,23 +28,59 @@
       },
       {
         "file": "index.html",
-        "hash": "7899792888691802531"
+        "hash": "2823546001702121897"
       },
       {
         "file": "main.ts",
-        "hash": "16635586463787978962"
+        "hash": "14280005930306334464"
       },
       {
         "file": "nx",
         "hash": "3244421341483603138"
       },
       {
+        "file": "page/home/home.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/home/home.component.html",
+        "hash": "8980251380215388944"
+      },
+      {
+        "file": "page/home/home.component.ts",
+        "hash": "16671158931239975487"
+      },
+      {
+        "file": "page/layouts/layouts.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/layouts/layouts.component.html",
+        "hash": "10541660920782310136"
+      },
+      {
+        "file": "page/layouts/layouts.component.ts",
+        "hash": "6366552245596706514"
+      },
+      {
+        "file": "page/login/login.component.css",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "page/login/login.component.html",
+        "hash": "15037950857834361771"
+      },
+      {
+        "file": "page/login/login.component.ts",
+        "hash": "17797223239508354514"
+      },
+      {
         "file": "styles.css",
-        "hash": "5195668842064076916"
+        "hash": "13951877186918310483"
       },
       {
         "file": "test/test.component.ts",
-        "hash": "8297952342914498779"
+        "hash": "9154050862623945999"
       },
       {
         "file": "test/test.html",
