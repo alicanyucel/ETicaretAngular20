@@ -6,26 +6,18 @@ import { LayoutsComponent } from '../page/layouts/layouts.component';
 
 export const appRoutes: Route[] = [
   {
-    path: '',
-    component: LayoutsComponent,
-    children: [
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-      }
-    ]
+    path: 'login',
+   loadComponent:()=>import('../page/login/login.component').then(m=>m.LoginComponent),
   },
   {
-    path: '**',
-    redirectTo: ''
+    path: '',
+    loadComponent:()=>import('../page/layouts/layouts.component').then(m=>m.LayoutsComponent),
+    children: [
+      {
+        path: '',
+        loadComponent:()=>import('../page/home/home.component').then(m=>m.HomeComponent),
+      }
+    ]
   }
 ];
+
